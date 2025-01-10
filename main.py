@@ -52,7 +52,7 @@ def main():
 			for shot in shots:
 				if (shot.is_colliding_with(asteroid)):
 					shot.kill()
-					asteroid.kill()
+					asteroid.split()
 
 		# paint the background
 		screen.fill((0,0,0))
